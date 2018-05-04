@@ -28,6 +28,8 @@ feature 'Attack' do
 feature 'Switcher'
   scenario 'Switching turns' do
     sign_in_and_play
+    click_link 'Attack Alastair'
+    click_link 'Next Move'
     click_link 'Attack Asia'
     expect(page).to have_content("Fuuuuuuck, Asia has been hit!")
 
