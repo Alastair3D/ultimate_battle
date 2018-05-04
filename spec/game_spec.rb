@@ -11,7 +11,7 @@ describe Game do
     end
   end
 
-  describe '#player_two' do 
+  describe '#player_two' do
     it 'saves player two as an attribute' do
       expect(game.player_two).to eq(alastair)
     end
@@ -25,5 +25,6 @@ describe Game do
       expect(ralph).to have_received(:sustain_damage)
     end
   end
+
 
 end

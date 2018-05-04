@@ -1,23 +1,28 @@
 <style>
+h2, h3 {
+  color:rgb(195, 0, 0);
+  text-align: center;
+}
 
   div {
-    background-image: url(https://i.giphy.com/media/nBFRrsg55sJqM/200w.webp);
-    background-size: 75%;
+    background-image: url(https://media.giphy.com/media/6zGASZMuTXREA/giphy.gif);
+    background-size: 50%;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 400px
+    padding: 200px
   }
 
   h1, h2, h3 {
     text-align: center;
   }
-</style>
 
+<br>
+</style>
+<br>
+<h1>Fuuuuuuck, <%= @game.player_two.name %> has been hit! </h1>
+<br>
 <div>
 </div>
-
-<h1>Holy fuck, <%= @game.player_two.name %> has been hit! </h1>
-<br>
 <br>
 <h2> <%= @game.player_two.name %>: <%= @game.player_two.health %> HP </h2>
 <br>
