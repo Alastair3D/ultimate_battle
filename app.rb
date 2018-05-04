@@ -27,6 +27,13 @@ class Battle < Sinatra::Base
     erb(:attack)
   end
 
+  get '/attack2' do
+    @game = $game
+    @player_one = @game.player_one
+    @game.attack(@player_one)
+    erb(:attack2)
+  end
+
   run! if app_file == $0
 
 end

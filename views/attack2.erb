@@ -5,7 +5,7 @@ h2, h3 {
 }
 
   div {
-    background-image: url(https://media.giphy.com/media/6zGASZMuTXREA/giphy.gif);
+    background-image: url(https://media3.giphy.com/media/SOkmY25BRffu8/giphy.gif);
     background-size: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,16 +17,14 @@ h2, h3 {
   }
 
 
-
-
 <br>
 </style>
 <br>
-<h1>Fuuuuuuck, <%= @game.player_two.name %> has been hit! </h1>
+<h1>Fuuuuuuck, <%= @game.player_one.name %> has been hit! </h1>
 <br>
 <div>
 </div>
 <br>
-<h2> <%= @game.player_two.name %>: <%= @game.player_two.health %> HP </h2>
+<h2> <%= @game.player_one.name %>: <%= @game.player_one.health %> HP </h2>
 <br>
 <h3> <a href="/play">Next Move</a> </h3>
