@@ -11,8 +11,8 @@ class Game
     player.sustain_damage
   end
 
-  def display_player_one_name
-    @player_one.name
-  end
+  # def display_player_one_name
+  #   @player_one.name
+  # end
 
 end
