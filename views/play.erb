@@ -22,6 +22,7 @@
 
 <h1> P1: <%= @game.player_one.name %> Vs. P2: <%= @game.player_two.name %> </h1>
 <br>
+<h2> <%= @game.player_one.name %>: <%= @game.player_one.health %> HP </h2>
 <h2> <%= @game.player_two.name %>: <%= @game.player_two.health %> HP </h2>
 <h3> <a href="/attack">Attack <%= @game.player_two.name%></a>              <=       /   /    =>
 <a href="/attack2">Attack <%= @game.player_one.name %> </a> </h3>

@@ -5,6 +5,13 @@ describe Game do
   let(:alastair) { double :player2 }
   subject(:game) { described_class.new(muzzi, alastair) }
 
+
+  describe '#initialize' do
+    it 'Sets current_player to Player 1' do
+      expect(game.current_player).to eq muzzi
+    end
+  end
+
   describe '#player_one' do
     it 'saves player one as an attribute' do
       expect(game.player_one).to eq(muzzi)
